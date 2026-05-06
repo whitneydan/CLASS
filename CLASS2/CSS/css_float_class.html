@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOATS</title>
+</head>
+<body>
+    <style>
+ .container{
+            background-color: lightgray;
+            /* border: 2px solid rgb(48, 13, 208); */
+            /* Uncomment the following line to observe the issue without clearfix */
+            /* overflow: hidden; */
+        }
+
+.float-box{
+    /* float: right; */
+    /* float: left; */
+
+    /* width: 100px; */
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+    background-color: yellow;
+}
+
+.box1{
+    float: left;
+}
+.box2{
+    float: left;
+}
+
+.box2{
+    background-color: rgb(32, 211, 202);
+}
+.box3{
+    float: left;
+    background-color: blueviolet;
+}
+
+.others{ background-color: brown;}
+
+/* .clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+} */
+    </style>
+
+<!-- <div class="container"> -->
+    <div class="container clearfix">
+        <div class="float-box box1">box1</div>
+        <div class="float-box box2">box2</div>
+        <div class="float-box box3">box3</div>
+    </div>
+    <p style="clear:both"></p>
+
+    <!-- <div class="float-box box1">box4<div> -->
+        <!-- <div class="float-box box2">box5</div> -->
+         <!-- <div class="float-box box3">box6</div> -->
+         <!-- <p style="clear::both"></p> -->
+<div class="others">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Nisi dignissimos magnam tempora et culpa quod, reiciendis, 
+autem sunt iste quam aspernatur est labore iusto nulla,
+ itaque architecto adipisci blanditiis illum.
+</div>
+</body>
+</html>

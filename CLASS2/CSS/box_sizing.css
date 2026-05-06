@@ -1,0 +1,44 @@
+/** Here's a breakdown of the box model components:
+1.	Content: The actual content of the box, such as text, images, or other media.
+2.	Padding: The transparent area around the content, providing space between the content and the border.
+3.	Border: A visible or invisible boundary surrounding the padding, defining the edges of the box.
+4.	Margin: The transparent space outside the border, creating separation between the element and its surrounding elements.
+ */
+
+
+/* box_sizing.css */
+/* The box-sizing property in CSS is used to control the sizing behavior of an element's box model. 
+It determines how the total width and height of an element are calculated, including padding and borders. 
+The two main values for the box-sizing property are: */
+
+.outside{
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+    border: 10px solid red;
+    /* min-width: 200px; */
+    width: 100%;
+    /* padding: 20px; */
+    /* height: 50px; */
+    /* margin: 20px; */
+
+}
+
+/* .box {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #000;
+  } */
+  
+
+  .box {
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+    /* width: 200px; */
+    /* width: 100vw; */
+    width: 100%;
+    /* max-width: 500px; */
+    padding: 20px;
+    border: 20px solid #000;
+    /* margin: 20px; */
+  }

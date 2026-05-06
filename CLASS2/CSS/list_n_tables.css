@@ -21,11 +21,11 @@ ol{
   /* list-style-type: lower-roman; */
   /* list-style-type: upper-roman; */
   /* list-style-type: lower-greek; */
-  list-style-type: armenian;
+  /* list-style-type: armenian; */
 
 }
-
-/* li {
+/* 
+li {
     color: red;
 } */
 
@@ -35,14 +35,14 @@ ol{
 
 ul {
   padding: 25px;
-  background-color: coral;
+  /* background-color: coral; */
   /* list-style-type:disc; */
   /* list-style-type:circle; */
   /* list-style-type:square; */
   
-
-  /* list-style-position:inside; */
-  list-style-position:outside;
+/* 
+  list-style-position:inside; */
+  /* list-style-position:outside; */
 
   /* list-style-image: url('./imgs/car7.jpeg');  */
   /* list-style-image: url('./imgs/small_Img2.png');  */
@@ -72,7 +72,7 @@ ul > *:hover {
 /* TABLES */
 /* #################################################### */
 table {
-  background-color: rgb(144, 144, 242);
+  background-color: red;
 
   /* width: 90%; */
   width: 100%;
@@ -93,7 +93,7 @@ tr:hover {
 }
 
 td:hover {
-  background-color: rgb(111, 21, 115);
+  background-color: ;
 }
 
 /* table{ */
