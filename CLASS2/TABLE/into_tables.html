@@ -5,60 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABLE STRUCTURE</title>
     <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;  
+    }
     body{
             background-color: gold;
         }
-    .company{
-        border: 7px solid white;
+        table, td, th{
+            border: 7px solid white;
+            border-collapse: collapse;
+            width: 90%;
+            padding: 5px;
+            margin-top: 10px;
+            margin-left: 10px;
+            text-align: center;
+        }
+        th,td{
+            padding: 10px;
+        }
+   
+    .left{
+        text-align: left;
+        width: 40%;
     }
+    .contact{
+        width: 40%;
+    }
+    .country{
+        width: 40%;
+    }
+    
     </style>
 </head>
 <body>
-    <table class="company">
+    <table>
         <tr>
-            <th>COMPANY</th>
-            <th>CONTACT</th>
-            <th>COUNTRY</th>
+            <th class="left">COMPANY</th>
+            <th class="contact">CONTACT</th>
+            <th class="country">COUNTRY</th>
         </tr>
         <tr>
-            <td>SHELL</td>
-            <td>08045537788</td>
+            <td class="left">SHELL</td>
+            <td class="contact">08045537788</td>
+            <td >NIGERIA</td>
+        </tr>
+        <tr>
+            <td class="left">MR-SOFT</td>
+            <td class="contact">09076678900</td>
+            <td class="country">TOGO</td>
+        </tr>
+        <tr>
+            <td class="left">REWHITUL</td>
+            <td class="contact">0706554399</td>
+            <td class="country">GHANA</td>
+        </tr>
+        <tr>
+            <td class="left">ZORTURA</td>
+            <td class="contact">08076654499</td>
+            <td class="country">BRAZIL</td>
+        </tr>
+        <tr>
+            <td class="left">NEY'S LEGACY</td>
+            <td class="contact">07065598800</td>
+            <td class="country">AMERICA</td>
+        </tr>
+        <tr>
+            <td class="left">COCA-COLA</td>
+            <td class="contact">07045562288</td>
             <td>NIGERIA</td>
         </tr>
         <tr>
-            <td>MR-SOFT</td>
-            <td>09076678900</td>
-            <td>TOGO</td>
+            <td class="left">NETFLIX</td>
+            <td class="contact">09032237788</td>
+            <td class="country">AMERICA</td>
         </tr>
         <tr>
-            <td>REWHITUL</td>
-            <td>0706554399</td>
-            <td>GHANA</td>
-        </tr>
-        <tr>
-            <td>ZORTURA</td>
-            <td>08076654499</td>
-            <td>BRAZIL</td>
-        </tr>
-        <tr>
-            <td>NEY'S LEGACY</td>
-            <td>07065598800</td>
-            <td>AMERICA</td>
-        </tr>
-        <tr>
-            <td>COCA-COLA</td>
-            <td>07045562288</td>
-            <td>NIGERIA</td>
-        </tr>
-        <tr>
-            <td>NETFLIX</td>
-            <td>09032237788</td>
-            <td>AMERICA</td>
-        </tr>
-        <tr>
-            <td>MICROSOFT CORPORATIONS</td>
-            <td>08068890099</td>
-            <td>MOROCCO</td>
+            <td class="left">MICROSOFT CORPORATIONS</td>
+            <td class="contact">08068890099</td>
+            <td class="country">MOROCCO</td>
         </tr>
     </table>
 </body>
