@@ -1,0 +1,38 @@
+/* Grid */
+.gridContainer{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: 100px 100px 100px 100px 100px 100px; */
+    grid-template-rows: repeat(6, 100px);
+    gap: 20px;
+}
+
+.Item{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.i4{
+    grid-column: 1 / 3;
+}
+.i11{
+    grid-column: span 2;
+}
+
+.i7{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.i8{
+    grid-column: span 2;
+}
+/*1fr stands for 1 fraction, it is a flexible unit used exclusively within css grid layout 
+to distribute the available in a grid container  */
+/* Grid is for multiple dimensions, while flexbox
+if for one dimension. */ 
