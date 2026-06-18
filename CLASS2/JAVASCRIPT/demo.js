@@ -10,8 +10,9 @@ let mySchool = "uniport";
 // console.log(mySchool)
 mySchool = "RSU";
 console.log(mySchool);
-let myPosition = "Intern";
+// Different ways for variable naming
 // Variable, Variable Name, Value. Arrays where we can add various datatype
+let myPosition = "Intern";
 let savage21 = 15;
 let my_church = "SOJ";
 let $company = "MRsoft";
@@ -26,6 +27,10 @@ Primitive Data type consist of single values.
 Non-Primitive Data types consist of multiple values.
 Primitive Data type = strings, numbers, boolean, null, undefined, symbols.
 Non-Primitive Data types = Objects, Arrays, Function, Regular Expression. */
+
+//Strings is a sequence of characters in quote.
+// A JavaScript string is zero or more characters written inside quotes. 
+
 
 // 1.STRINGS
 console.log("Ken", "Divine", "whitney", 12, true, null);
