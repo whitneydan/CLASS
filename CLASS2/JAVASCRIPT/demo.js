@@ -106,6 +106,8 @@ console.log(myDateOfBirth);
 // math operators +, -, /, *, **, %
 // we make use of the ++ to add by 1
 // we make use of the -- to subtract by 1
+// + (addition), -(subtraction), /(division), *(multiplication), **(raise to the power), %(remainder)
+
 // addition
 let myDogAge = 5;
 // myDogAge++
@@ -200,9 +202,10 @@ console.log(timeZone >= 25);
 console.log(timeZone <= 30);
 console.log(timeZone > 25);
 console.log(timeZone < 25);
-// = is assignment
+// = is assignment(assigning a value)
 // == equality
 // === strict equality
+// >
 // >= greater than or equal to
 // <= less than or 
 // != not equal to
