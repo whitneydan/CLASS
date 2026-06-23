@@ -81,3 +81,32 @@ do {
     console.log("this is age:", $age);
     $age++;
 } while ($age <= 10);
+
+// BREAK AND CONTINUE FLOW FOR LOOPING
+/**
+ BREAK keyword is used when a particular value is assigned.
+ It breaks out the remaining after the assigned value.
+ While using the if statement in 'for loop',
+ we log into the console before writing the if statement,
+ for the 'break' to be effective.
+ */
+let admissionNumber = [20, 30, 10, 0, 25, 100, 36, 73, 2];
+for (let i = 0; i < admissionNumber.length; i++) {
+    console.log("Admission No:", admissionNumber[i]);
+
+if (admissionNumber[i] === 100){
+    break;
+}
+}
+
+/**CONTINUE keyword tells the browser to skip(not displaying on the browser/console)
+ the assigned value and move to other values.
+ while using the if statement in for loop, we write the if statement
+ before logging into the console for the 'continue' to be effective.
+ */
+let userScore = [20, 30, 10, 0, 25, 100, 36, 73, 2];
+for (let i = 0; i < userScore.length; i++){
+    if (userScore[i] === 0){
+        continue;
+    }
+}
