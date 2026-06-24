@@ -1,4 +1,4 @@
-let x = 5;
+let x = 5;    
 let y = 6;
 let z = x + y;
 console.log(z);
@@ -348,6 +348,8 @@ const childAge1 = Boolean(0);
 console.log(childAge1, typeof childAge1);
 
 // all strings in a boolean type conversion are always true except it is empty it becomes false
+
+// We should the const more in JS. We can only use let if it will be updated in the future
 const schoolAttended = Boolean("UST");
 console.log(schoolAttended);
 
