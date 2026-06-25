@@ -154,3 +154,103 @@ myNumbers.forEach((num) => {
     mySum += num;
 });
 console.log("Total sum:", mySum);
+
+// OBJECT LITERAL
+// objects are created with a curly braces sign '{}' and they consist of properties and its values inside, and they are separated with a ','.
+// we make use of the '.notation' and square brackets'[]' to access the value of a property inside an object
+const person = {
+    name: "John",
+    age: 20, 
+    city: "Port Harcourt",
+    siblings: ["providence", "James","simeon", "john" ],
+};
+console.log(person["age"]);
+/* updating values using square brackets[]
+when we are making use of the square bracket to locate a value,
+we pass in the property as a string inside the [].
+ */
+person["name"] = "Caleb";
+person.siblings.push("Joy");
+console.log(person);
+
+/*
+Object Methods
+when a 'function' is a property of an object it is called a method
+*/
+const skill = {
+    skill1: "cyber security",
+    skill2: "Web development",
+    skill3: "Blockchain Development",
+    programmingLanguage: ["Fullstack", "python", "c#"],
+    login: () => {
+        console.log(`This user logged in`);
+    },
+    logOut () {
+        console.log(`This user logged out`);
+    },
+};
+console.log(skill);
+skill.login();
+skill.logOut();
+
+const detail = {
+    firstName: "John",
+    lastName: "Doe",
+    fullName: function () {
+        // return this.firstName + ' ' + this.lastName;
+        return `${this.firstName} ${this.lastName}`;
+    },
+};
+const myFullName = detail.fullName();
+console.log(myFullName);
+detail.middleName = "Joy";
+console.log(detail);
+
+// Exercise
+const $student = {
+    name: "John Deo",
+    age: 20,
+    courses: ["Math", "English", "Science"],
+    isGraduated: false,
+    greeting: function () {
+        return `Hello, my name is ${this.name}`;
+    },
+};
+console.log(students.greeting());
+$student.grade = "A";
+$student.isGraduated = true;
+console.log(delete $student.age);
+console.log($student);
+
+// Objects in an array
+const car = {
+    carName: "Urus",
+    model: 2025,
+    engine: "v12",
+    carCompanies: [
+        { company: "Dodge", views: "1.5million"},
+        { company: "Audi", views: "5million"},
+    ],
+    user() {
+        this.carCompanies.forEach((fastCar) =>{
+        console.log(`${fastCar.company} has ${fastCar.views} reactions`);    
+        });
+    },
+};
+car.user();
+
+// Math Object
+console.log(Math.PI);
+console.log(Math.E);
+
+let mathObject = 7.9;
+console.log(Math.round(mathObject));
+console.log(Math.floor(mathObject));
+console.log(Math.ceil(mathObject));
+console.log(Math.trunc(mathObject));
+
+// Generating random numbers.
+const randomNumber = Math.random();
+console.log(randomNumber);
+
+console.log(Math.round(randomNumber * 100));
