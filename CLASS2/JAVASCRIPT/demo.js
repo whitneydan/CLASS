@@ -77,7 +77,7 @@ console.log(fullName.slice(5, 11));
 let $myCompany = "mrsoft";
 console.log($myCompany.slice(0, 2), $myCompany.slice(0, 2).toUpperCase());
 // replace
-console.log(fullName.replace("j", "p"));
+console.log(fullName.replace("v", "p"));
 // substring
 let text = "web3 is the future";
 console.log(text.substring(0, 4));
@@ -205,9 +205,10 @@ console.log(timeZone < 25);
 // = is assignment(assigning a value)
 // == equality
 // === strict equality
-// >
+// > greater than
+// < less than
 // >= greater than or equal to
-// <= less than or 
+// <= less than or equal to
 // != not equal to
 
 /**
@@ -231,6 +232,7 @@ console.log(myChurch === "winners chapel");
 console.log(myChurch === "Winners Chapel");
 
 // null
+// null is 0
 let yourName = null;
 console.log(yourName, yourName + 3, `my name is ${yourName}`);
 // {} CB: Curly Braces
