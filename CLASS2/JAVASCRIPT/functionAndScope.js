@@ -102,6 +102,7 @@ function returnValue(a, b) {
 let myCall = returnValue(10, 5);
 console.log(myCall);
 
+// passing the value of "myCall" as an argument for "presentYear";
 function checkYear(presentYear){
     return presentYear + 2025;
 }
@@ -127,13 +128,15 @@ function showCallback() {
 displayMessage(showCallback);
 
 // 2
-const myFunc = (iAmCalling) => {
+const myFunction = (iAmCalling) => {
     let myValue = 10 + 20;
     iAmCalling(myValue);
 };
-myFunc(function (myValue){
+
+function myCallback(myValue) {
     console.log(myValue);
-});
+}
+myFunction(myCallback);
 
 // forEach method
 const myPeople = ["providence", "James", "simeon", "jane"];
@@ -170,7 +173,7 @@ when we are making use of the square bracket to locate a value,
 we pass in the property as a string inside the [].
  */
 person["name"] = "Caleb";
-person.siblings.push("Joy");
+person.siblings.push["Joy"];
 console.log(person);
 
 /*
@@ -216,7 +219,7 @@ const $student = {
         return `Hello, my name is ${this.name}`;
     },
 };
-console.log(students.greeting());
+console.log($student.greeting());
 $student.grade = "A";
 $student.isGraduated = true;
 console.log(delete $student.age);
