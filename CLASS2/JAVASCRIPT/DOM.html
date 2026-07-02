@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Object Model</title>
+    <style>
+      #players {
+        display: flex;
+        gap: 3rem;
+        justify-content: center;
+      }
+      #players > div {
+        border: 1px solid black;
+        padding: 25px 50px;
+        border-radius: 5px;
+        text-align: center;
+      }
+
+      button {
+        background-color: transparent;
+        padding: 5px 10px;
+        border: 1px solid black;
+        border-radius: 3px;
+      }
+      .new-class {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1 id="dom">JAVASCRIPT DOM</h1>
+      <h2>Dom Manipulation</h2>
+      <section>
+        <p id="content">Hello World</p>
+        <p class="contentCard">Hello World 2</p>
+        <ol id="students"></ol>
+        <p id="car"></p>
+        <button>Enter Me</button> <br />
+        <a href="https://www.w3schools.com" target="_blank"
+          >W3School Official Website</a
+        >
+        <div>
+          <p id="text"></p>
+          <a href="#"></a>
+        </div>
+      </section>
+      <section>
+        <h2>Favorite Sports</h2>
+        <ul id="sports">
+          <li class="sportClass">Soccer</li>
+          <li class="sportClass">Table Tennis</li>
+          <li class="sportClass">Football</li>
+          <li class="sportClass">Swimming</li>
+        </ul>
+        <div id="players">
+          <div>
+            <h3>Player 1</h3>
+            <button onclick="alert('I love JavaScript')">Enter Player 1</button>
+          </div>
+          <div id="player2">
+            <h3>Player 2</h3>
+            <button id="btn2">Enter Player 2</button>
+          </div>
+          <div id="player3">
+            <h3>Player 3</h3>
+            <button>Enter Player 3</button>
+          </div>
+        </div>
+        <p id="testing">Testing this paragraph</p>
+        <p id="paragraph">hello</p>
+      </section>
+      <!-- Form Section -->
+      <section>
+        <!-- Form -->
+        <form id="myForm">
+          <label for="text">Username:</label>
+          <input type="text" name="username" placeholder="username" />
+          <input type="submit" value="Submit" />
+          <!-- Input Element -->
+          <input type="text" id="userInput" />
+          <!-- fieldset -->
+          <fieldset>
+            <legend>User Info</legend>
+            <input type="text" name="firstName" />
+          </fieldset>
+          <!-- Labels -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" />
+          <!-- Textarea -->
+          <textarea id="message"></textarea>
+          <!-- Button -->
+          <button id="submitBtn">Submit</button>
+          <!-- checkbox -->
+          <input type="radio" name="gender" value="male" />Male
+          <input type="radio" name="gender" value="female" />Female
+          <!-- Image Input -->
+          <input
+            style="width: 20"
+            type="image"
+            src="./logo.png"
+            alt="submitImage"
+          />
+          <!-- select -->
+          <label for="text">Country:</label>
+          <select id="country">
+            <option value=" "></option>
+            <option value="ng">Nigeria</option>
+            <option value="gh">Ghana</option>
+            <option value="logo">Togo</option>
+          </select>
+          <!-- File Upload -->
+          <input type="file" id="upload" />
+        </form>
+      </section>
+      <script src="./dom.js"></script>
+    </main>
+  </body>
+</html>

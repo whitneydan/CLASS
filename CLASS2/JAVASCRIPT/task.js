@@ -69,3 +69,22 @@ function returnValue(c, d) {
 
 let myAge = returnValue(90, 10);
 console.log(myAge);
+
+// OBJECT LITERALS
+
+const laptop = {
+     name: "Hp EliteBook",
+     processor: "CORE i5",
+     keyboard: ["Navigation keys", "Alphanumeric keys", "Function keys"],
+     
+     brand: () => {
+        console.log("This is HP brand");
+     },
+
+     name: () => {
+        console.log("This is HP EliteBook");
+     },
+};
+console.log(laptop);
+laptop.brand();
+laptop.name();

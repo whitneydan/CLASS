@@ -330,7 +330,7 @@ miraclesScore = String(miraclesScore);
 console.log(miraclesScore);
 
 // converting a Boolean into a string
-let $boolean =true;
+let $boolean = true;
 $boolean = String($boolean);
 console.log($boolean);
 

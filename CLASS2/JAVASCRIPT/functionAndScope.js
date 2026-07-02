@@ -139,10 +139,14 @@ function myCallback(myValue) {
 myFunction(myCallback);
 
 // forEach method
+// forEach()
 const myPeople = ["providence", "James", "simeon", "jane"];
-myPeople.forEach((person, index) => {
+// myPeople.forEach((person, index) => {console.log(person, index);});
+
+let myKids = function(person, index) {
     console.log(person, index);
-});
+}
+myPeople.forEach(myKids);
 
 // we can also define a function, then pass the function we defined into the myPeople.forEach()
 const students = (myStudent) => {
@@ -167,7 +171,10 @@ const person = {
     city: "Port Harcourt",
     siblings: ["providence", "James","simeon", "john" ],
 };
-console.log(person["age"]);
+console.log(person);
+// console logging the properties individually
+console.log(person["name"], person.age);
+
 /* updating values using square brackets[]
 when we are making use of the square bracket to locate a value,
 we pass in the property as a string inside the [].
