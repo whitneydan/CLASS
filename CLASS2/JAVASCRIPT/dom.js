@@ -148,4 +148,57 @@ function changeBgColor() {
 }
 player.addEventListener('mouseover', changeBgColor);
 
+
 // Form object
+let myForm = document.getElementById("myForm");
+console.log(myForm);
+console.log(document.forms[0]);
+console.log(document.forms["myForm"]);
+// Input Element Object
+let input = document.getElementById("userInput");
+input.value = "Hello! Steven";
+
+// Fieldset and Legend Element Objects
+let fieldset = document.querySelector("fieldset");
+console.log(fieldset);
+
+// Label Element Object
+let label = document.querySelector("label");
+console.log(label.htmlFor);
+
+// Textarea Element Object
+let textArea = document.getElementById("message");
+textArea.value = "Type your message here.....";
+
+// Button Element Object
+let submitBtn = document.getElementById("submitBtn");
+submitBtn.onclick = function() {
+    alert("Form Submitted");
+};
+// Checkbox Input Object
+let checkbox = document.getElementById("subscribe");
+console.log(checkbox.checked);
+
+// Radio Input Object
+let radios = document.getElementsByName("gender");
+radios.forEach((radio) => {
+ if (radio.checked) {
+    console.log(radio.value);
+ }
+});
+
+// Image Input Object
+let imageInput = document.querySelector('input[type="image"]');
+console.log(imageInput.alt, imageInput.src);
+
+// Select Elements Objects
+let select = document.querySelector("#country");
+// console.log(select.value);
+let option = select.options[3];
+console.log(option.text);
+
+// File Input Element Object
+let fileInput = document.getElementById("upload");
+fileInput.onchange = function() {
+    console.log(fileInput[0].name);
+};

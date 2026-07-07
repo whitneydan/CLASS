@@ -34,7 +34,13 @@
  }
  for (let i = 0; i < 5; i++) {
   console.log("This is my car", myCars[i]);
+  
  }
+
+//  for (let i = 0; i < 4; i++){
+//     console.log(myCars[i], "i do not like this car");
+//  }
+
 //  WHILE LOOP
 /* while loop a little different from for loop because the initial expression
 is outside the parenthesis(), followed by the while statement, then the condition
