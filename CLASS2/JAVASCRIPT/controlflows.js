@@ -42,7 +42,7 @@
 //  }
 
 //  WHILE LOOP
-/* while loop a little different from for loop because the initial expression
+/* while loop is a little different from for loop because the initial expression
 is outside the parenthesis(), followed by the while statement, then the condition
 the increment is inside the code block just after the console.log.
 */
