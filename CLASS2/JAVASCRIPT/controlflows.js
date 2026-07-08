@@ -62,6 +62,14 @@ while (i < schoolNames.length) {
     i++;
 }
 
+// const states = ["Rivers", "Abia", "Kano", "Lagos"];
+// let p = 0;
+// while (p < states.length) {
+//     console.log("This is my state:", states[p]);
+//     p++;
+// }
+
+
 // DO WHILE LOOP (it is an extension of a while loop and used to loop regardless whether the condition is true/false)
 // in do-while loop when a condition isn't met it will run once but when its met, it will loop through.
 // in do-while loops, the conditions is at the end after the code block.

@@ -11,7 +11,7 @@ const tagElement = document.getElementsByTagName("button");
 console.log(tagElement);
 // QuerySelector
 const myBtn = document.querySelector(".contentCard");
-console.log(myBtn); 
+console.log(myBtn);
 // QuerySelectorAll
 const $paragraph = document.querySelectorAll("p");
 console.log($paragraph);
@@ -20,7 +20,7 @@ const $student = document.getElementById("students");
 const myStudents = ["John", "Doe", "James", "Daniel"];
 let html = ``;
 myStudents.forEach((student) => {
-    html += `<li> I am ${student} a Frontend Development Student</li>`;
+  html += `<li> I am ${student} a Frontend Development Student</li>`;
 });
 $student.innerHTML = html;
 $student.style.color = "blue";
@@ -28,17 +28,17 @@ $student.style.color = "blue";
 // displaying html on DOM using with object
 const myCars = document.getElementById("car");
 const myObject = {
-    carCompany: [
-        { company: "Lamborghini", views: "2 million"},
-        { company: "Ferrari", views: "20 million"},
-    ],
-    user() {
-        let content = ``;
-        this.carCompany.forEach((myCar) => {
-          content += `<p> ${myCar.company} has ${myCar.views} reactions</p>`;
-        });
-        return content;
-    },
+  carCompany: [
+    { company: "Lamborghini", views: "2 million" },
+    { company: "Ferrari", views: "20 million" },
+  ],
+  user() {
+    let content = ``;
+    this.carCompany.forEach((myCar) => {
+      content += `<p> ${myCar.company} has ${myCar.views} reactions</p>`;
+    });
+    return content;
+  },
 };
 myCars.innerHTML = myObject.user();
 myCars.style.color = "green";
@@ -79,7 +79,7 @@ newLink.style.color = "white";
 const javaScriptDom = document.getElementById("dom");
 console.log(`node type is:`, javaScriptDom.nodeType);
 console.log(`node name is:`, javaScriptDom.nodeName);
-console.log('has child node?:', javaScriptDom.hasChildNodes());
+console.log("has child node?:", javaScriptDom.hasChildNodes());
 const myH2 = document.querySelector("h2");
 console.log(`node type is:`, myH2.nodeType);
 console.log(`node name is:`, myH2.nodeName);
@@ -90,13 +90,13 @@ const sportUl = document.querySelector("ul");
 const new_List = document.createElement("li");
 new_List.setAttribute("class", "sportClass");
 // set a textContent to the <li> created
-new_List.innerText ="Gaming";
+new_List.innerText = "Gaming";
 // appending <li> to <ul>
 sportUl.append(new_List);
 const listItem = document.querySelectorAll(".sportClass");
 console.log(listItem);
 for (i = 0; i < listItem.length; i++) {
-    listItem[i].style.color = "red";
+  listItem[i].style.color = "red";
 }
 
 // innerText
@@ -113,9 +113,9 @@ console.log(newParagraph);
 // newParagraph.classList.add('new-class');
 newParagraph.classList.remove("new-class");
 if (newParagraph.classList.contains("new-class")) {
-    console.log("This class exist");
+  console.log("This class exist");
 } else {
-     console.log("This class has been removed");
+  console.log("This class has been removed");
 }
 
 // Creating elements
@@ -130,24 +130,23 @@ console.log(newElement);
 
 // Events Listener
 // onClick(), addEventListener('click', function), mouseover
-const btn = document.querySelector('#btn2');
+const btn = document.querySelector("#btn2");
 function alertBtn() {
-    alert('A player has been Entered');
+  alert("A player has been Entered");
 }
-btn.addEventListener('click', alertBtn);
+btn.addEventListener("click", alertBtn);
 
-const newPlayer = document.querySelector('#player2');
+const newPlayer = document.querySelector("#player2");
 function changePlayerBg() {
-    newPlayer.style.backgroundColor = 'red';
+  newPlayer.style.backgroundColor = "red";
 }
-btn.addEventListener('click', changePlayerBg);
+btn.addEventListener("click", changePlayerBg);
 
-const player = document.querySelector('#player3');
+const player = document.querySelector("#player3");
 function changeBgColor() {
-    player.style.backgroundColor ='blue';
+  player.style.backgroundColor = "blue";
 }
-player.addEventListener('mouseover', changeBgColor);
-
+player.addEventListener("mouseover", changeBgColor);
 
 // Form object
 let myForm = document.getElementById("myForm");
@@ -172,8 +171,8 @@ textArea.value = "Type your message here.....";
 
 // Button Element Object
 let submitBtn = document.getElementById("submitBtn");
-submitBtn.onclick = function() {
-    alert("Form Submitted");
+submitBtn.onclick = function () {
+  alert("Form Submitted");
 };
 // Checkbox Input Object
 let checkbox = document.getElementById("subscribe");
@@ -182,9 +181,9 @@ console.log(checkbox.checked);
 // Radio Input Object
 let radios = document.getElementsByName("gender");
 radios.forEach((radio) => {
- if (radio.checked) {
+  if (radio.checked) {
     console.log(radio.value);
- }
+  }
 });
 
 // Image Input Object
@@ -199,6 +198,6 @@ console.log(option.text);
 
 // File Input Element Object
 let fileInput = document.getElementById("upload");
-fileInput.onchange = function() {
-    console.log(fileInput[0].name);
+fileInput.onchange = function () {
+  console.log(fileInput[0].name);
 };
