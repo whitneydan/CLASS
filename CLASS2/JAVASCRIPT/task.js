@@ -88,3 +88,14 @@ const laptop = {
 console.log(laptop);
 laptop.brand();
 laptop.name();
+
+    // UPDATING HREF & JAVASCRIPT
+// 1
+const text = document.querySelector("h1");
+text.innerText ="JAVASCRIPT";
+
+// 2
+ const link =document.querySelector("a");
+ console.log(link.getAttribute("href"));
+ link.setAttribute("href", "https://www.w3schools.com");
+ link.innerText ="W3schools is amazing";

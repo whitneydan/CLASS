@@ -1,2 +1,2 @@
-// const image = document.getElementById("myImage");
-// image.onclick = document.getElementById("myImage").src"./i";
+const image = document.getElementById("myImage");
+

@@ -41,9 +41,21 @@
 //     console.log(myCars[i], "i do not like this car");
 //  }
 
+
+// let myHouse = [
+//     "Duplex",
+//     "Bungalow",
+//     "Villa",
+//     "Detached Houses",
+// ];
+// for(let n = 0; n < myHouse.length; n++) {
+//    console.log("My house is a", myHouse[n]);
+// }
+
+
 //  WHILE LOOP
 /* while loop is a little different from for loop because the initial expression
-is outside the parenthesis(), followed by the while statement, then the condition
+is outside the parenthesis(), followed by the while statement, then the condition,
 the increment is inside the code block just after the console.log.
 */
 
@@ -58,7 +70,7 @@ the increment is inside the code block just after the console.log.
  const schoolNames = ["babcock", "covenant", "uniport", "UST"];
  let i = 0;
 while (i < schoolNames.length) {
-    console.log(" i attended:", schoolNames[i]);
+    console.log(" I attended:", schoolNames[i]);
     i++;
 }
 
@@ -69,6 +81,12 @@ while (i < schoolNames.length) {
 //     p++;
 // }
 
+// const $places = ["Gambia", "Malaysia", "London", "UK"];
+// let e = 0;
+// while(e < 3) {
+//     console.log("I went to", $places[e]);
+//     e++;
+// }
 
 // DO WHILE LOOP (it is an extension of a while loop and used to loop regardless whether the condition is true/false)
 // in do-while loop when a condition isn't met it will run once but when its met, it will loop through.
