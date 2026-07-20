@@ -124,6 +124,10 @@ console.log(myCat);
 let myNumber = 5 * 5;
 console.log(myNumber);
 
+// let $sum = 20;
+// $sum *= 11;
+// console.log($sum);
+
 // division
 let myHouseNumber = 30 / 15;
 console.log(myHouseNumber);
@@ -216,6 +220,13 @@ console.log(timeZone < 25);
  Later alphabets are greater than early alphabets.
  Alphabets with lowercase are greater than alphabets with uppercase.
  uppercase and lowercase alphabets are different in JavaScript
+
+ e.g: A < Z (A is less than Z)
+      Z > B (Z is greater than B)
+      a > E (a is greater than E)
+      a < w (a is less than w)
+      w > a (w is greater than a)
+
  */
 let myCourse = "javaScript";
 console.log(myCourse == "JavaScript");

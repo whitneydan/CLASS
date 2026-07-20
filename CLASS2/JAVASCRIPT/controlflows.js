@@ -114,6 +114,28 @@ do {
     $age++;
 } while ($age <= 10);
 
+// 1
+// let land = 4;
+// do{
+//     console.log("It is not met", land);
+//     land++;
+// } while(land <= 3);
+
+// 2
+// let name = 8;
+// do{
+//     console.log("You passed", name);
+//     name++;
+// }while (name <= 10);
+
+// 3
+// let $page = 2;
+// do{
+//     console.log("This is amazing interesting", $page);
+//     $page++;
+// }while ($page < 12);
+
+
 // BREAK AND CONTINUE FLOW FOR LOOPING
 /**
  BREAK keyword is used when a particular value is assigned.
@@ -131,6 +153,25 @@ if (admissionNumber[i] === 100){
 }
 }
 
+// let $scores = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// for (let p = 0; p < $scores.length; p++){
+//     console.log("This is my score:", $scores[p]);
+
+//     if($scores[p] === 60){
+//        break; 
+//     }
+// }
+
+// let names = ["John", "Caleb", "Nero", "Luke"];
+// for (let l = 0; l < names.length; l++) {
+//     console.log("These are their names:", names[l]);
+
+//   if(names[l] === "Luke"){
+//     break;
+//   }
+// }
+
+
 /**CONTINUE keyword tells the browser to skip(not displaying on the browser/console)
  the assigned value and move to other values.
  while using the if statement in for loop, we write the if statement
@@ -144,6 +185,15 @@ for (let i = 0; i < userScore.length; i++){
     console.log(`you scored : ${userScore[i]}`);
 }
 
+// let myScore = [25, 35, 45, 55, 65, 77];
+// for (let u = 0; u < myScore.length; u++){
+//     if (myScore[u] === 55){
+//         continue;
+//     }
+//     console.log(`I passed my exams ${myScore[u]}`);
+// }
+
+
 // Exercises
 // 1
 let countDown = 10;
@@ -153,12 +203,28 @@ while(countDown > 0) {
 }
 console.log("liftoff");
 
+// let upDown = 10;
+// while(upDown > 0) {
+//   console.log(upDown);
+//   upDown--;
+// }
+// console.log("Stop!");
+
+
+
 // 2
 // let password;
 // do{
 //     password = prompt(`Enter Password`)
-// } while (password != 'secret123`);
-console.log("Access Granted");
+// } while (password != "secret123");
+// console.log("Access Granted");
+
+
+// let $password;
+// do{
+//     $password = prompt(`Enter passkey`)
+// } while($password != "null222");
+// console.log("Do Give Access");
 
 // 3
 for (let i = 1; i <= 10; i++){
@@ -169,6 +235,14 @@ for (let i = 1; i <= 10; i++){
     }
 }
 
+// for (let p = 1; p <= 11; p++) {
+
+//     console.log(p);
+//  if( p === 5) {
+//     break;
+//  }
+// }
+
 // 4
 for (let i = 0; i <= 20; i++){
     if (i % 3 === 0){
@@ -176,6 +250,17 @@ for (let i = 0; i <= 20; i++){
     }
     console.log("This is", i);
 }
+
+// for (let q = 0; q < 33; q++) {
+//   if (q % 2 === 0){
+//     continue;
+//   }
+//   console.log("I scored", q);
+// }
+
+
+// (CONTROL FLOWS)
+
 // CONDITIONAL STATEMENT
 // IF STATEMENT (the code will only execute if the condition is true)
 /*
@@ -192,6 +277,25 @@ if (models.length >= 4) {
     console.log("These are my models");
 }
 
+
+// This has to do with Later alphabets are greater than earlier alphabets
+// const myChild = "Jane";
+// if (myChild < "Peace") {
+//     console.log("This is my child");
+// }
+
+// const myAge = 20;
+// if (myAge > 12) {
+//     console.log("This my age");
+// }
+
+const newAge = ["Praise", "Favour", "Kate", "Loveth"];
+if (newAge.length < 5) {
+    console.log("This is the number of students");
+}
+
+
+
 // ELSE STATEMENT
 // when the condition is not met ELSE will display.
 if (models.length >= 4){
@@ -199,6 +303,15 @@ if (models.length >= 4){
 } else{
     console.log("My candidates are outnumbered");
 }
+
+
+// if (newAge.length < 2){
+//     console.log("These are my students🙂");
+// }else {
+//     console.log("These are not my students");
+// }
+
+
 
 // ELSE IF STATEMENT
 // It consists of two or more conditions. when the first condition falls,
@@ -212,6 +325,8 @@ if (models.length < 4){
 } else {
     console.log("These are not my candidates");
 }
+
+
 /**
  LOGICAL OPERATORS OR || and AND &&
 both conditional statement has to be true when using the && operator to pass or display on the console/browser

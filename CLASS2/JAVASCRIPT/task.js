@@ -99,3 +99,24 @@ text.innerText ="JAVASCRIPT";
  console.log(link.getAttribute("href"));
  link.setAttribute("href", "https://www.w3schools.com");
  link.innerText ="W3schools is amazing";
+
+
+// 3
+ const name = document.querySelector("p");
+ name.setAttribute("id", "myName");
+ console.log(name);
+
+ const myDate = document.getElementById("myName");
+ myDate.innerHTML = "My name is Whitney";
+
+//  4
+const theKitchen  = document.querySelector("ul");
+const addUtensils = document.createElement("li");
+addUtensils.setAttribute("class", "kitchenUtensils");
+addUtensils.innerText = "Fork";
+theKitchen.append(addUtensils);
+const tools = document.querySelectorAll(".kitchenUtensils");
+console.log(tools);
+for (i = 0; i < tools.length; i++) {
+  tools[i].style.color = "gold";
+}

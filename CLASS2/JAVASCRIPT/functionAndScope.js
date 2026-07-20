@@ -102,6 +102,7 @@ function returnValue(a, b) {
 let myCall = returnValue(10, 5);
 console.log(myCall);
 
+
 // passing the value of "myCall" as an argument for "presentYear";
 function checkYear(presentYear){
     return presentYear + 2025;
@@ -264,3 +265,14 @@ const randomNumber = Math.random();
 console.log(randomNumber);
 
 console.log(Math.round(randomNumber * 100));
+
+function checkNumber(number) {
+    if (number % 2 === 0) {
+        console.log(number + " is an even number.");
+    } else {
+        console.log(number + " is an odd number.");
+    }
+}
+
+checkNumber(8);
+checkNumber(7);
