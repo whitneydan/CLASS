@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <h1>JSON(Javascript Object Notation)</h1>
+
+    <h2>Student's Record</h2>
+    <div id="recordOutput"></div>
+
+    <script>
+      // JS Object
+      const details = {
+        name: "John",
+        age: 30,
+        isStudent: false,
+        email: function () {
+          return "Johndoe@gmail.com";
+        },
+        contact: {
+          phoneNumber: +2349011113333,
+          address: "Mrsoft International",
+        },
+      };
+      console.log(details);
+      //   converting JS Object into JSON
+      const toJson = JSON.stringify(details);
+      console.log(toJson);
+      // converting JSON back to an Object
+      const fromJsonToObject = JSON.parse(toJson);
+      console.log(fromJsonToObject);
+
+      // JS Array of Object
+      const studentRecord = [
+        {
+          name: "John Doe",
+          age: 14,
+          class: "JSS 2",
+          scores: {
+            math: 85,
+            english: 78,
+            science: 90,
+          },
+        },
+        {
+          name: "Jane Smith",
+          age: 15,
+          class: "JSS 3",
+          scores: {
+            math: 92,
+            english: 88,
+            science: 95,
+          },
+        },
+        {
+          name: "Jerry Wick",
+          age: 25,
+          class: "SS 3",
+          scores: {
+            math: 100,
+            english: 48,
+            science: 95,
+          },
+        },
+      ];
+      console.log(studentRecord[2]);
+      studentRecord.forEach((student) => {
+        console.log(student.name, student.scores.math);
+      });
+      //   converting Array of Object into JSON
+      const arrayObjectToJson = JSON.stringify(studentRecord);
+      console.log(arrayObjectToJson);
+
+      // EXAMPLE
+      const studentsJSON = `
+        [
+            {
+            "name": "John Doe",
+            "age": 14,
+            "class": "JSS 2",
+            "scores": {
+                "math": 85,
+                "english": 78,
+                "science": 90
+            }
+            },
+            {
+            "name": "Jane Smith",
+            "age": 15,
+            "class": "JSS 3",
+            "scores": {
+                "math": 92,
+                "english": 88,
+                "science": 95
+            }
+            },
+            {
+            "name": "Jerry Wick",
+            "age": 25,
+            "class": "SS 3",
+            "scores": {
+                "math": 100,
+                "english": 48,
+                "science": 95
+            }
+            }
+        ]
+        `;
+      //   covert JSON string to JS Object
+      const students = JSON.parse(studentsJSON);
+      //   Display Data on the DOM
+      let output = "";
+      students.forEach((student) => {
+        output += <h3>${student.name}</h3>;
+        output += <p>Age: ${student.age}</p>;
+        output += <p>Class: ${student.class}</p>;
+        output += <p>Math Score: ${student.scores.math}</p>;
+        output += <p>English Score: ${student.scores.english}</p>;
+        output += <p>Science Score: ${student.scores.science}</p>;
+        output += <hr />;
+      });
+      let studentOutput = document.getElementById("recordOutput");
+      studentOutput.innerHTML = output;
+    </script>
+  </body>
+</html>

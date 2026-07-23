@@ -128,13 +128,23 @@ newElement.append(newPara);
 document.body.append(newElement);
 console.log(newElement);
 
+// clicking a button, is an event. click on a keyboard. An event is simply something that happens on a webpage. You move your mouse is
+// An eventlistener is javascript waiting for an event to happen, so that it can execute some code.
 // Events Listener
 // onClick(), addEventListener('click', function), mouseover
 const btn = document.querySelector("#btn2");
+
+// Solution 1
 function alertBtn() {
   alert("A player has been Entered");
 }
 btn.addEventListener("click", alertBtn);
+
+
+// Solution 2
+btn.addEventListener("click", () => {
+  alert("A player has been Entered");
+});
 
 const newPlayer = document.querySelector("#player2");
 function changePlayerBg() {
@@ -201,3 +211,12 @@ let fileInput = document.getElementById("upload");
 fileInput.onchange = function () {
   console.log(fileInput[0].name);
 };
+
+// Dark-mode Testing
+const body = document.querySelector("body");
+const darkMode = document.querySelector(".fa-solid");
+
+darkMode.addEventListener("click", () => {
+  body.style.backgroundColor = "black";
+  body.style.color = "white";
+});

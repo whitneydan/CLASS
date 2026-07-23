@@ -326,6 +326,7 @@ if (models.length < 4){
     console.log("These are not my candidates");
 }
 
+let fashion = []
 
 /**
  LOGICAL OPERATORS OR || and AND &&
